@@ -135,8 +135,57 @@
     .caja2{
         background-color: rgb(221, 215, 255);
         grid-area: caja2;
-    }
+     }
+
     
+    .tran1{
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        transition: all 2s ease;
+        align-content: center;
+        margin-top: 30px;
+    }
+
+    .tran1:hover{
+         background-color: rgb(181, 241, 255);
+         height: 100px;
+    
+         transform: scale(1.1, 1.1);
+         border-radius: 50%;
+        }
+
+        .tran2{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            transition: all 2s ease;
+            align-content: center;
+        }
+    
+        .tran2:hover{
+             background-color: rgb(181, 241, 255);
+             height: 100px;
+        
+             transform: scale(1.1, 1.1);
+             border-radius: 50%;
+            }    
+        
+        .tran3{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                transition: all 2s ease;
+                align-content: center;
+            }
+        
+            .tran3:hover{
+                 background-color: rgb(181, 241, 255);
+                 height: 100px;
+            
+                 transform: scale(1.1, 1.1);
+                 border-radius: 50%;
+                }      
     
     .cajaz{
         background-color: rgb(174, 235, 243);
