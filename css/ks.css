@@ -28,7 +28,7 @@
   
 
     nav{
-    text-align: center;
+    text-align: left;
     }
     
     .menu{ 
@@ -60,150 +60,59 @@
         border-radius: 20%
     }
 
-
     .contenedor{
-    margin: 5px auto;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-columns: 300px 3fr 1fr;
-    grid-template-areas: 
-    "cajax   cajax  cajax "
-    "caja1   caja1  caja2"
-    "cajaz   cajaz  cajaz";
-    gap: 10px;
+        margin: 5px auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns:100px 1fr;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas: 
+        "cajax cajax"
+        "caja1 caja1"
+        "cajaz cajaz";
+        gap: 10px;
+        
+         }  
     
-     }  
-
-    .contenedorhijo{
-    width: 100%;
-    border-radius: 3px;
-    text-align: center;
-}
-
-
-    .cajax{
-        background-color: rgb(181, 241, 255);
-        grid-area: cajax;
-}
-    .parrafo1{
-        padding: 0;
-        margin: 15px;
-        text-align: left;
-        font-family: 'Roboto Mono', monospace;
-        font-size: medium;
+        .contenedorhijo{
+        width: 100%;
+        border-radius: 3px;
+        text-align: center;
     }
-
-    .caja1{
-        background-color: rgb(205, 196, 255);
-        grid-area: caja1;
-        border-bottom-left-radius: 3px;
-
+    
+    
+        .cajax{
+            background-color: rgb(54, 125, 141);
+            grid-area: cajax;
     }
-    .titulo1{
-        text-align: left;
-        font-size: 120px;
-        font-family: 'Nunito Sans', sans-serif;;
-        margin: 15px;
+    
+           
+     
+        .caja1{
+            background-color: rgb(175, 161, 255);
+            grid-area: caja1;
     }
-
-    .contenedorflex{
-       display: flex;
-       flex-wrap: nowrap;
-       padding-top: 5px;
-
-    }
-
-    .flexitem{
-      width:200px;
-      height: 50px;
-      background-color:greenyellow; 
-      margin: 1rem;
+    
+    
+     
+        
+        .cajaz{
+            background-color: rgb(36, 33, 249);
+            grid-area: cajaz;
+        }
+        
        
-    }
-
-
-    .articulo2{
-        font-family: 'Roboto Mono', monospace;
-        font-size: larger;
-        text-align: right;
-        margin: 15px;
-        overflow: auto;
-    }
-
-    
-    .caja2{
-        background-color: rgb(221, 215, 255);
-        grid-area: caja2;
-     }
-
-    
-    .tran1{
-        width: 100px;
-        height: 100px;
-        background-color: aquamarine;
-        transition: all 2s ease;
-        align-content: center;
-        margin-top: 30px;
-    }
-
-    .tran1:hover{
-         background-color: rgb(181, 241, 255);
-         height: 100px;
-    
-         transform: scale(1.1, 1.1);
-         border-radius: 50%;
-        }
-
-        .tran2{
-            width: 100px;
-            height: 100px;
-            background-color: aquamarine;
-            transition: all 2s ease;
-            align-content: center;
-        }
-    
-        .tran2:hover{
-             background-color: rgb(181, 241, 255);
-             height: 100px;
-        
-             transform: scale(1.1, 1.1);
-             border-radius: 50%;
-            }    
-        
-        .tran3{
-                width: 100px;
-                height: 100px;
-                background-color: aquamarine;
-                transition: all 2s ease;
-                align-content: center;
-            }
-        
-            .tran3:hover{
-                 background-color: rgb(181, 241, 255);
-                 height: 100px;
-            
-                 transform: scale(1.1, 1.1);
-                 border-radius: 50%;
-                }      
-    
-    .cajaz{
-        background-color: rgb(174, 235, 243);
-        grid-area: cajaz;
-    }
-    
-    @media (max-width:1080px)
-    {
-    .contenedor{
-    grid-template-columns: 400px;
-    grid-template-rows: 100px 2fr 1fr 1fr;
-    grid-template-areas:
-    "cajax"
-    "caja1"
-    "caja2"
-    "cajaz";
-    gap: 3px;
-     } 
+        @media (max-width:700px)
+        {
+        .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas:
+        "cajax"
+        "caja1"
+        "cajaz";
+         } 
+   
 
      .menu{ 
         display: block;
@@ -242,7 +151,17 @@
         margin: 15px;
        
     }
+    
+    .video{
+    position: relative;    
+    display: flex;
+    align-items: center;
+    }
 
+    .kate{
+        font-size: 30px;
+
+    }
 
     
     }
