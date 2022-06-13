@@ -1,97 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px; }
 
-    .contenedordos{
-        width: 100%;
-        display: grid;
-        grid-template-areas: 
-        "uno"
-        "dos"
-        "tres"
-        "cuatro"
-        "cinco"
-        ;
-        
-         }  
-    
-    
-        .uno{
-            background-color: rgb(238, 191, 97);
-            grid-area: uno;
-           
-        }
-    
-        .dos{
-            background-color: rgb(184, 131, 34);
-            grid-area: dos;
-            }
-        
-        .tres{
-                background-color: rgb(245, 139, 10);
-                grid-area: tres;
-                }
-        
-        .cuatro{
-            background-color: rgb(62, 150, 40);
-            grid-area: cuatro;
-        }
-        
-        
-        .cinco{
-            background-color: rgb(134, 164, 84);
-            grid-area: cinco;
-        }
-  
+header .letra {
+  text-align: left;
+  margin-left: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 170px;
+  opacity: 70%; }
 
+header .nav {
+  text-align: left; }
+  header .nav .menu {
+    display: flex;
+    font-size: 1rem;
+    list-style-type: none;
+    margin-top: 5px;
+    justify-content: space-between; }
+    header .nav .menu .li {
+      display: inline-block;
+      text-align: left;
+      margin: 0.7rem;
+      padding: 0.7rem; }
+      header .nav .menu .li:hover {
+        color: antiquewhite;
+        background-color: beige;
+        border-radius: 20%; }
+        header .nav .menu .li:hover .a {
+          text-decoration: none;
+          display: inline-block;
+          color: black; }
 
-    .contenedortres{
-            width: 100%;
-            display: grid;
-            grid-template-areas: 
-            "seis"
-            "siete"
-            "ocho"
-            "nueve"
-            "diez"
-            ;
-            
-            }  
-        
-        
-            .seis{
-                background-color: rgb(210, 210, 233);
-                grid-area: seis;
-               
-            }
-        
-            .siete{
-                background-color: rgb(179, 175, 175);
-                grid-area: siete;
-            }
-            
-            .ocho{
-                    background-color: rgb(76, 76, 169);
-                    grid-area: ocho;
-            }
+main .nombre {
+  position: absolute;
+  font-size: 120px;
+  top: 400px;
+  left: 40px;
+  font-family: 'Nunito', sans-serif; }
 
-            .nueve{
-                background-color: rgb(123, 176, 199);
-                grid-area: nueve;
-            }
-
-             .diez{
-            background-color: rgb(124, 176, 20);
-            grid-area: diez;
-            }       
-
-
-    .contenedorcuatro{
+main .contenedor {
+  margin: 5px auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "caja1 caja1" "cajaz cajaz";
+  gap: 10px; }
+  main .contenedor .contenedorhijo {
     width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "once"
-    "doce"
-    "trece"
-    "catorce"
-    "quince"
-    ;
-                
-    }  
+    border-radius: 3px;
+    text-align: center; }
+    main .contenedor .contenedorhijo .cajax {
+      background-color: #367d8d;
+      grid-area: cajax; }
+    main .contenedor .contenedorhijo .caja1 {
+      background-color: #afa1ff;
+      grid-area: caja1; }
+    main .contenedor .contenedorhijo .cajaz {
+      background-color: #2421f9;
+      grid-area: cajaz; }
+
+@media (max-width: 700px) {
+  main .menu {
+    display: block; }
+    main .menu li {
+      display: block;
+      text-align: left;
+      margin: 0.7rem;
+      padding: 0.1rem; } }
