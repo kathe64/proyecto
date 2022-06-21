@@ -3,99 +3,39 @@
     padding:0px;
  }  
 
- header{
-    .letra{
-        text-align: left;
-        margin-left: 1rem;
-        font-family: 'Nunito', sans-serif;
-        font-size: 170px;
-        opacity: 70%;
-    }
-    .nav{
-        text-align: left;
-        .menu{ 
-            display: flex;
-            font-size: 1rem;
-            list-style-type: none;
-            margin-top: 5px;
-            justify-content: space-between;
-            .li{ 
-                display: inline-block;
-                text-align: left;
-                margin: 0.7rem;
-                padding: 0.7rem; 
-                &:hover{
-                    color: antiquewhite;
-                    background-color: beige;
-           
-                    border-radius: 20%;
-                    .a{
-                        text-decoration: none;
-                        display: inline-block;
-                        color: rgb(0, 0, 0);
-                    }
-                }
-            
-            }
-        }
+ 
+@import "body";
+
+@import "pages";
+
+h1{
+    margin: 1rem;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;}
+
+
+h3{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Mali', cursive;}
     
-    }
-}    
 
+h4
+{padding: 2rem;
+text-align: center;}
 
-main{
-    .nombre{
-        position: absolute;
-        font-size: 120px;
-        top: 400px;
-        left: 40px;
-        font-family: 'Nunito', sans-serif;
-    }
-    .contenedor{
-        margin: 5px auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns:100px 1fr;
-        grid-template-rows: 100px 100px;
-        grid-template-areas: 
-        "caja1 caja1"
-        "cajaz cajaz";
-        gap: 10px;
-        .contenedorhijo{
-            width: 100%;
-            border-radius: 3px;
-            text-align: center;
-            .cajax{
-                background-color: rgb(54, 125, 141);
-                grid-area: cajax;
-        }
-        
-            .caja1{
-                background-color: rgb(175, 161, 255);
-                grid-area: caja1;
-        }
-
-             
-        .cajaz{
-            background-color: rgb(36, 33, 249);
-            grid-area: cajaz;
-        }
-        
-    }
-        
+footer{
+    .footer1{
+     padding: 1.5rem;
+    text-align: center;
+}
 }
 
-@media (max-width:700px)
-{
-    .menu{ 
-        display: block;
-        li{ 
-            display:block;
-            text-align: left;
-            margin: 0.7rem;
-            padding: 0.1rem; 
         
-        }
-    }
-}    
-}

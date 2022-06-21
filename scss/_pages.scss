@@ -1,0 +1,50 @@
+
+
+@mixin cajas {
+  padding: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+  font-size: x-large;
+}
+
+
+.container{ 
+    
+    .row{
+                     
+         .mov1{
+              
+              @include cajas
+         }
+               
+    }
+  }
+      
+  .container{ 
+    
+    .row{
+                     
+         .mov2{
+          padding: 0.5rem;
+          font-family: 'Dosis', sans-serif;
+              
+         }
+               
+    }
+  }  
+  
+  .container{ 
+    
+    .row{
+                     
+         .mov3{
+          font-family: 'Mali', cursive;;
+          font-size: larger;
+          text-align: center;
+              
+         }
+               
+    }
+  }  
+  
+    
+
